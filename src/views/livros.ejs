@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #topo {
+            padding: 5%;
+            margin: 0 auto;
+            background-color: royalblue;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="topo">
+        <h1>
+            Livros
+        </h1>
+    </div>
+    <center>
+        <table style="margin-top: 2%; text-align: center;" border="1px">
+            <tr>
+                <th>
+                    Nome do Livro
+                </th>
+                <th>
+                    Autor
+                </th>
+            </tr>
+            <% data.forEach((element, index)=> { %>
+                <tr>
+                    <td>
+                        <%= element.nome %>
+                    </td>
+                    <td>
+                        <%= element.autor %>
+                    </td>
+                </tr>
+                <% }); %>
+        </table>
+    </center>
+</body>
+
+</html>
